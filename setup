@@ -4,6 +4,6 @@ for file in $PWD/dotfiles/\.[a-zA-Z]*
 do
   if [ -f $file ]; then
     filename=${file}
-    ln -sFhv $filename $HOME/`basename ${filename}`
+    ln -sFv $filename $HOME/`basename ${filename}`
   fi
 done
