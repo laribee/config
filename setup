@@ -2,19 +2,8 @@
 
 for file in $PWD/dotfiles/\.[a-zA-Z]*
 do
-  echo "PROCESSING -> ${file}"
   if [ -f $file ]; then
     filename=${file}
-    ln -sfhv $filename $HOME_DIR/`basename ${filename}`
+    ln -sFhv $filename $HOME/`basename ${filename}`
   fi
 done
-
-# Setup oh-my-zsh
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-
-# Create path for Vundler
-vundle_dir="$HOME/.vim/bundle"
-if [ ! -d "$vundle_dir" ]; then
-  mkdir -p $vundle_dir
-  git clone https://github.com/VundleVim/Vundle.vim.git $vundle_dir
-fi
