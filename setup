@@ -3,7 +3,8 @@
 for file in $PWD/dotfiles/\.[a-zA-Z]*
 do
   if [ -f $file ]; then
-    filename=${file}
-    ln -sFv $filename $HOME/`basename ${filename}`
+    ln -sFv $file $HOME/`basename ${file}`
   fi
 done
+
+ln -sFv $PWD/oh-my-zsh/ $HOME

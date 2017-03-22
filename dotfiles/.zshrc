@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # export ZSH_THEME="arrow"
 # export ZSH_THEME="garyblessington"
-export ZSH_THEME=avit
+export ZSH_THEME=laribee
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
