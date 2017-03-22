@@ -5,7 +5,7 @@ export ZSH=$HOME/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # export ZSH_THEME="arrow"
 # export ZSH_THEME="garyblessington"
-export ZSH_THEME=laribee
+export ZSH_THEME="laribee"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
