@@ -239,7 +239,7 @@ imap <expr> <S-tab> emmet#expandAbbrIntelligent("\<tab>")
 
 set guifont=Menlo:h16
 set linespace=2
-colorscheme base16-eighties
+colorscheme base16-nerdnoir
 let g:airline_theme="base16_eighties"
 set background=dark
 " END: GUI CONFIGURATION

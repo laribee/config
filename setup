@@ -8,3 +8,6 @@ do
 done
 
 ln -sFv $PWD/oh-my-zsh/ $HOME
+
+mkdir -p $HOME/.vim/colors
+ln -sFv $PWD/resources/vim/base16-nerdnoir.vim $HOME/.vim/colors/base16-nerdnoir.vim
