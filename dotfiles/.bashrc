@@ -3,5 +3,6 @@ alias b="cd -"
 alias ~="cd ~"
 alias l="ls -alF"
 
-# set vi mode
-set -o vi
+
+# added by travis gem
+[ -f /Users/laribee/.travis/travis.sh ] && source /Users/laribee/.travis/travis.sh

@@ -24,6 +24,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
 filetype plugin indent on

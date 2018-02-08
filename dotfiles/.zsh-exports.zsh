@@ -5,8 +5,9 @@ export EDITOR="mvim"
 export VISUAL="mvim --remote-tab-wait"
 export GEM_EDITOR="vi"
 export GEM_OPEN_EDITOR="vi"
-export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
 export TERM=xterm-color
 export CLICOLOR=1
 export PGOPTIONS='-c client_min_messages=WARNING'
 export NODE_PATH=/usr/local/bin/node:/usr/local/lib/node_modules
+# export JAVA_HOME=/usr/libexec/java_home
+export JAVA_HOME=$(/usr/libexec/java_home)

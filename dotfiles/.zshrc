@@ -1,11 +1,11 @@
-# Path to your oh-my-zsh configuration.
 export ZSH=$HOME/oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # export ZSH_THEME="arrow"
 # export ZSH_THEME="garyblessington"
-export ZSH_THEME="laribee"
+# export ZSH_THEME="laribee"
+export ZSH_THEME="nicoulaj"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -35,4 +35,17 @@ source ~/.zsh-set_options.zsh
 source ~/.zsh-completion.zsh
 source ~/.zsh-aliases.zsh
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+
+# set vi mode
+set -o vi
+
 unsetopt auto_name_dirs
+
+# added by travis gem
+[ -f /Users/laribee/.travis/travis.sh ] && source /Users/laribee/.travis/travis.sh
+
+# yarn
+export PATH="$PATH:`yarn global bin`"

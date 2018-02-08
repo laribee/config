@@ -19,7 +19,7 @@
   changed = green
   untracked = cyan
 [merge]
-	tool = p4merge
+	tool = p4mergetool
 	keepBackup = false
 [mergetool "p4merge"]
 	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
@@ -27,7 +27,7 @@
 [mergetool]
   prompt = false
 	keepTemporaries = false
-  keepBackup = false
+	keepBackup = false
 [diff]
   tool = p4diff
 [difftool "p4diff"]
@@ -38,6 +38,7 @@
   autocrlf = input
   legacyheaders = false
   editor = vim
+	excludesfile = /Users/laribee/.gitignore_global
 [repack]
   usedeltabaseoffset = true
 [alias]
@@ -59,3 +60,21 @@
 	default = upstream
 [init]
 	templatedir = ~/.git_template
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[difftool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/laribee/.stCommitMsg
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[gui]
+	recentrepo = /Users/laribee/projects/workshops/anarchy/bonfire
